@@ -1,67 +1,53 @@
-'use client';
-
-import { useState } from 'react';
+import Link from 'next/link';
 import Navigation from '@/components/Navigation';
-import Lightbox from '@/components/Lightbox';
+import { galleryCategories } from '@/lib/gallery';
 
 export default function Gallery() {
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
-
-  // Placeholder for your actual images
-  const categories = [
-    { name: 'Portraits', count: 12 },
-    { name: 'Landscapes', count: 24 },
-    { name: 'Urban', count: 18 },
-    { name: 'Events', count: 15 },
-  ];
-
   return (
     <div className="min-h-screen bg-white">
       <Navigation currentPage="gallery" />
 
       {/* Main Content */}
-      <main className="pt-32 pb-16 px-gutter-mobile md:px-gutter-desktop">
-        <h1 className="text-5xl md:text-6xl font-light tracking-tight mb-16">Gallery</h1>
-
-        {/* Categories - Minimal style */}
+      <main className="pt-40 pb-24 px-gutter-mobile md:px-gutter-desktop max-w-7xl mx-auto">
+        {/* Hero Section */}
         <div className="mb-16">
-          <div className="flex gap-6 text-sm uppercase tracking-wider overflow-x-auto pb-4">
-            <button className="hover:opacity-70 transition whitespace-nowrap font-normal">All</button>
-            {categories.map((category) => (
-              <button
-                key={category.name}
-                className="hover:opacity-70 transition whitespace-nowrap text-medium-gray"
-              >
-                {category.name}
-              </button>
-            ))}
-          </div>
+          <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4 text-foreground">
+            Gallery
+          </h1>
+          <p className="text-lg text-medium-gray max-w-2xl">
+            Explore my photography through different themes and styles
+          </p>
         </div>
 
-        {/* Photo Grid - Masonry style - Respects Original Ratios */}
-        <div className="columns-1 md:columns-2 lg:columns-3 gap-4 space-y-4">
-          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20].map((i) => (
-            <div
-              key={i}
-              className="break-inside-avoid mb-4 hover:opacity-90 transition cursor-pointer"
-              onClick={() => setSelectedImage(`/placeholder/photo-${i}.jpg`)}
+        {/* Category Tiles */}
+        <div className="grid md:grid-cols-2 gap-8">
+          {galleryCategories.map((category) => (
+            <Link
+              key={category.id}
+              href={`/gallery/${category.slug}`}
+              className="group block"
             >
-              <div className="w-full bg-gray-200 flex items-center justify-center text-gray-400 text-sm" style={{ aspectRatio: '3/4', minHeight: '300px' }}>
-                Photo {i}
+              <div className="border border-gray-200 rounded-lg overflow-hidden hover:border-accent transition-colors">
+                {/* Cover Image */}
+                <div className="aspect-[4/3] bg-gray-200 flex items-center justify-center text-gray-400">
+                  {/* Placeholder - replace with actual image */}
+                  <span className="text-sm">Cover Image: {category.name}</span>
+                </div>
+
+                {/* Category Info */}
+                <div className="p-6">
+                  <h2 className="text-2xl font-bold text-foreground mb-2 group-hover:text-accent transition-colors">
+                    {category.name}
+                  </h2>
+                  <p className="text-base text-medium-gray">
+                    {category.description}
+                  </p>
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </main>
-
-      {/* Lightbox */}
-      {selectedImage && (
-        <Lightbox
-          imageSrc={selectedImage}
-          imageAlt="Gallery image"
-          onClose={() => setSelectedImage(null)}
-        />
-      )}
     </div>
   );
 }
