@@ -11,6 +11,16 @@ const config: Config = {
       colors: {
         background: 'var(--background)',
         foreground: 'var(--foreground)',
+        'light-gray': 'var(--light-gray)',
+        'medium-gray': 'var(--medium-gray)',
+        accent: 'var(--accent)',
+      },
+      spacing: {
+        'gutter-mobile': '6vw',
+        'gutter-desktop': '4vw',
+      },
+      fontFamily: {
+        sans: ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Helvetica Neue', 'Arial', 'sans-serif'],
       },
     },
   },

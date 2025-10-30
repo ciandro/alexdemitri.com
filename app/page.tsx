@@ -1,63 +1,83 @@
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col">
-      {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-white/80 dark:bg-black/80 backdrop-blur-sm z-50 border-b border-gray-200 dark:border-gray-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <div className="text-xl font-bold">Alex Demitri</div>
-            <div className="flex gap-8">
-              <a href="/" className="hover:text-gray-600 dark:hover:text-gray-400 transition">Home</a>
-              <a href="/gallery" className="hover:text-gray-600 dark:hover:text-gray-400 transition">Gallery</a>
-              <a href="/about" className="hover:text-gray-600 dark:hover:text-gray-400 transition">About</a>
-              <a href="/contact" className="hover:text-gray-600 dark:hover:text-gray-400 transition">Contact</a>
+    <div className="min-h-screen flex flex-col bg-white">
+      {/* Navigation - Transparent with blur */}
+      <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-nav z-50 border-b border-gray-100">
+        <div className="px-gutter-mobile md:px-gutter-desktop">
+          <div className="flex justify-between items-center h-20">
+            <a href="/" className="text-xl font-light tracking-wide hover:opacity-70 transition">
+              ALEX DEMITRI
+            </a>
+            <div className="flex gap-8 text-sm uppercase tracking-wider">
+              <a href="/gallery" className="hover:opacity-70 transition">Gallery</a>
+              <a href="/about" className="hover:opacity-70 transition">About</a>
+              <a href="/contact" className="hover:opacity-70 transition">Contact</a>
             </div>
           </div>
         </div>
       </nav>
 
-      {/* Hero Section */}
-      <main className="flex-1">
-        <section className="relative h-screen flex items-center justify-center">
-          <div className="absolute inset-0 bg-gradient-to-br from-gray-900 to-gray-700" />
-          <div className="relative z-10 text-center text-white px-4">
-            <h1 className="text-5xl md:text-7xl font-bold mb-4">
+      {/* Hero Section - Minimal with large imagery */}
+      <main className="flex-1 pt-20">
+        <section className="relative h-[85vh] flex items-center justify-center bg-light-gray">
+          <div className="text-center px-gutter-mobile md:px-gutter-desktop max-w-4xl">
+            <h1 className="text-6xl md:text-8xl font-light tracking-tight mb-6 text-foreground">
               Alex Demitri
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-gray-300">
-              Capturing moments, creating memories
+            <p className="text-lg md:text-xl font-light text-medium-gray mb-12 tracking-wide">
+              Photography
             </p>
-            <a
-              href="/gallery"
-              className="inline-block bg-white text-gray-900 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition"
-            >
-              View Gallery
-            </a>
           </div>
         </section>
 
-        {/* Featured Work Section */}
-        <section className="py-20 px-4 max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12 text-center">Featured Work</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Placeholder for featured images */}
-            {[1, 2, 3, 4, 5, 6].map((i) => (
+        {/* Featured Work Grid - Masonry style */}
+        <section className="py-16 md:py-24 px-gutter-mobile md:px-gutter-desktop">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
+            {/* Large featured image */}
+            <div className="col-span-2 row-span-2 aspect-square bg-gray-200 hover:opacity-90 transition cursor-pointer">
+              <div className="w-full h-full flex items-center justify-center text-gray-400 text-sm">
+                Featured Image 1
+              </div>
+            </div>
+
+            {/* Regular grid items */}
+            {[2, 3, 4, 5].map((i) => (
               <div
                 key={i}
-                className="aspect-square bg-gray-200 dark:bg-gray-800 rounded-lg flex items-center justify-center hover:scale-105 transition-transform cursor-pointer"
+                className="aspect-square bg-gray-200 hover:opacity-90 transition cursor-pointer"
               >
-                <span className="text-gray-400">Image {i}</span>
+                <div className="w-full h-full flex items-center justify-center text-gray-400 text-sm">
+                  Image {i}
+                </div>
+              </div>
+            ))}
+
+            {/* Another large item */}
+            <div className="col-span-2 aspect-[2/1] bg-gray-200 hover:opacity-90 transition cursor-pointer">
+              <div className="w-full h-full flex items-center justify-center text-gray-400 text-sm">
+                Wide Image 6
+              </div>
+            </div>
+
+            {[7, 8, 9, 10].map((i) => (
+              <div
+                key={i}
+                className="aspect-square bg-gray-200 hover:opacity-90 transition cursor-pointer"
+              >
+                <div className="w-full h-full flex items-center justify-center text-gray-400 text-sm">
+                  Image {i}
+                </div>
               </div>
             ))}
           </div>
         </section>
       </main>
 
-      {/* Footer */}
-      <footer className="bg-gray-100 dark:bg-gray-900 py-8 border-t border-gray-200 dark:border-gray-800">
-        <div className="max-w-7xl mx-auto px-4 text-center">
-          <p className="text-gray-600 dark:text-gray-400">
-            &copy; {new Date().getFullYear()} Alex Demitri. All rights reserved.
+      {/* Footer - Minimal */}
+      <footer className="bg-light-gray py-12 border-t border-gray-200">
+        <div className="px-gutter-mobile md:px-gutter-desktop text-center">
+          <p className="text-sm text-medium-gray tracking-wide">
+            &copy; {new Date().getFullYear()} Alex Demitri Photography
           </p>
         </div>
       </footer>
