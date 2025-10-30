@@ -1,23 +1,9 @@
-import Link from 'next/link';
+import Navigation from '@/components/Navigation';
 
 export default function Contact() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-nav z-50 border-b border-gray-100">
-        <div className="px-gutter-mobile md:px-gutter-desktop">
-          <div className="flex justify-between items-center h-20">
-            <Link href="/" className="text-xl font-light tracking-wide hover:opacity-70 transition">
-              ALEX DEMITRI
-            </Link>
-            <div className="flex gap-8 text-sm uppercase tracking-wider">
-              <Link href="/gallery" className="hover:opacity-70 transition">Gallery</Link>
-              <Link href="/about" className="hover:opacity-70 transition">About</Link>
-              <Link href="/contact" className="opacity-100 font-normal">Contact</Link>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <Navigation currentPage="contact" />
 
       {/* Main Content */}
       <main className="pt-32 pb-16 px-gutter-mobile md:px-gutter-desktop max-w-5xl mx-auto">
