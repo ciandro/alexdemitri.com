@@ -29,57 +29,71 @@ export default async function BlogPost({ params }: BlogPostPageProps) {
   const htmlContent = marked(post.content);
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-background">
       <Navigation />
 
-      <main className="pt-32 pb-16 px-gutter-mobile md:px-gutter-desktop max-w-3xl mx-auto">
+      <main className="pt-40 pb-24 px-gutter-mobile md:px-gutter-desktop max-w-4xl mx-auto">
         {/* Back link */}
         <Link
           href="/blog"
-          className="text-sm uppercase tracking-wider text-medium-gray hover:text-foreground transition mb-8 inline-block"
+          className="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent-light transition mb-12 group"
         >
-          ← Back to Blog
+          <span className="group-hover:-translate-x-1 transition-transform">←</span>
+          Back to Blog
         </Link>
 
         {/* Post header */}
-        <article>
-          <header className="mb-12">
-            <time
-              dateTime={post.date}
-              className="text-sm text-medium-gray uppercase tracking-wider"
-            >
-              {new Date(post.date).toLocaleDateString('en-US', {
-                month: 'long',
-                day: 'numeric',
-                year: 'numeric',
-              })}
-            </time>
-            <h1 className="text-4xl md:text-5xl font-light tracking-tight mt-4 mb-6">
+        <article className="bg-white rounded-3xl shadow-lg overflow-hidden mb-12">
+          <header className="p-8 md:p-12 lg:p-16 border-b border-border">
+            <div className="flex items-center gap-3 mb-8">
+              <time
+                dateTime={post.date}
+                className="inline-flex items-center gap-2 text-sm font-medium text-accent bg-accent/10 px-4 py-2 rounded-full"
+              >
+                {new Date(post.date).toLocaleDateString('en-US', {
+                  month: 'long',
+                  day: 'numeric',
+                  year: 'numeric',
+                })}
+              </time>
+            </div>
+
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-semibold tracking-tight mb-6 text-foreground">
               {post.title}
             </h1>
+
             {post.excerpt && (
-              <p className="text-xl text-medium-gray font-light leading-relaxed">
+              <p className="text-xl md:text-2xl text-dark-gray font-light leading-relaxed">
                 {post.excerpt}
               </p>
             )}
           </header>
 
           {/* Post content */}
-          <div
-            className="prose prose-lg max-w-none
-              prose-headings:font-light prose-headings:tracking-tight
-              prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl
-              prose-p:text-medium-gray prose-p:leading-relaxed
-              prose-a:text-foreground prose-a:underline hover:prose-a:opacity-70
-              prose-img:rounded-lg
-              prose-code:bg-gray-100 prose-code:px-2 prose-code:py-1 prose-code:rounded
-              prose-pre:bg-gray-100 prose-pre:border prose-pre:border-gray-200"
-            dangerouslySetInnerHTML={{ __html: htmlContent }}
-          />
+          <div className="p-8 md:p-12 lg:p-16">
+            <div
+              className="prose prose-lg md:prose-xl max-w-none
+                prose-headings:font-serif prose-headings:font-semibold prose-headings:tracking-tight
+                prose-h1:text-4xl prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6
+                prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-4
+                prose-p:text-dark-gray prose-p:leading-relaxed prose-p:mb-6
+                prose-a:text-accent prose-a:no-underline prose-a:font-medium hover:prose-a:text-accent-light
+                prose-strong:text-foreground prose-strong:font-semibold
+                prose-img:rounded-2xl prose-img:shadow-lg prose-img:my-8
+                prose-code:bg-light-gray prose-code:text-accent prose-code:px-2 prose-code:py-1 prose-code:rounded-lg prose-code:font-medium
+                prose-pre:bg-light-gray prose-pre:border prose-pre:border-border prose-pre:rounded-2xl prose-pre:shadow-sm
+                prose-blockquote:border-l-4 prose-blockquote:border-accent prose-blockquote:bg-light-gray prose-blockquote:py-4 prose-blockquote:px-6 prose-blockquote:rounded-r-xl
+                prose-ul:my-6 prose-ol:my-6
+                prose-li:text-dark-gray prose-li:my-2"
+              dangerouslySetInnerHTML={{ __html: htmlContent }}
+            />
+          </div>
         </article>
 
         {/* Comments section */}
-        <Comments />
+        <div className="bg-white rounded-3xl shadow-lg p-8 md:p-12">
+          <Comments />
+        </div>
       </main>
     </div>
   );
