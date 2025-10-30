@@ -1,12 +1,6 @@
-<svg width="240" height="60" viewBox="0 0 240 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Zen circle element (Enso) - minimalist -->
-  <circle cx="15" cy="30" r="8" stroke="currentColor" stroke-width="1.5" fill="none" opacity="0.7"/>
-
-  <!-- ALEX DEMITRI text with zen-inspired spacing -->
-  <text x="35" y="35" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="300" letter-spacing="3" fill="currentColor">
-    ALEX DEMITRI
-  </text>
-
-  <!-- Subtle horizontal line for balance -->
-  <line x1="35" y1="42" x2="225" y2="42" stroke="currentColor" stroke-width="0.5" opacity="0.3"/>
+<svg width="400" height="100" viewBox="0 0 400 100" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="100" fill="white"/>
+  <text x="90" y="60" font-family="'Helvetica Neue', 'Inter', sans-serif" font-size="40" font-weight="500" fill="black">ALEX DEMITRI</text>
+  <circle cx="40" cy="50" r="25" stroke="black" stroke-width="2" fill="none"/>
+  <rect x="35" y="25" width="10" height="50" rx="2" fill="black"/>
 </svg>
