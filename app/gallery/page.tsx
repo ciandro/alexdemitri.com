@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import Navigation from '@/components/Navigation';
 import { galleryCategories } from '@/lib/gallery';
 
@@ -29,9 +30,14 @@ export default function Gallery() {
             >
               <div className="border border-gray-200 rounded-lg overflow-hidden hover:border-accent transition-colors">
                 {/* Cover Image */}
-                <div className="aspect-[4/3] bg-gray-200 flex items-center justify-center text-gray-400">
-                  {/* Placeholder - replace with actual image */}
-                  <span className="text-sm">Cover Image: {category.name}</span>
+                <div className="relative aspect-[4/3] bg-gray-200">
+                  <Image
+                    src={category.coverImage}
+                    alt={category.name}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
                 </div>
 
                 {/* Category Info */}

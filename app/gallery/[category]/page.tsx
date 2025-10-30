@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { notFound, useParams } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import Navigation from '@/components/Navigation';
 import Lightbox from '@/components/Lightbox';
 import { getCategoryBySlug, getImagesByCategory } from '@/lib/gallery';
@@ -60,9 +61,14 @@ export default function CategoryGallery() {
                 className="break-inside-avoid mb-6 group cursor-pointer"
                 onClick={() => setSelectedImage(image.src)}
               >
-                <div className="aspect-[4/5] bg-gray-200 flex items-center justify-center text-gray-400 rounded-lg overflow-hidden hover:opacity-90 transition">
-                  {/* Placeholder - will be replaced with actual images */}
-                  <span className="text-sm">{image.alt}</span>
+                <div className="relative aspect-[4/5] rounded-lg overflow-hidden hover:opacity-90 transition">
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  />
                 </div>
               </div>
             ))}
