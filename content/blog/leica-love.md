@@ -1,14 +1,12 @@
 ---
-title: "My Love Affair with the Leica M: Why I Choose It for My Photography"
+title: "My Leica M: Why I Choose It for My Photography"
 date: "2025-10-29"
 excerpt: "Photography for me has always been more than just capturing moments—it's a way of seeing, of feeling time, of translating silence into light. Here's why I choose the Leica M range of cameras."
 ---
 
-*By Alex Demitri*
+By Alex Demitri
 
 Photography for me has always been more than just capturing moments—it's a way of seeing, of feeling time, of translating silence into light. Over the years, I've gravitated toward a singular tool that truly reflects that ethos: the **Leica M range of cameras**. In this post I'll share why the Leica M is my choice, how I use it in my work and life, and what it has taught me about photography, travel, and the art of observation.
-
----
 
 ## Why the Leica M?  
 ### A tool that respects time  
@@ -24,8 +22,6 @@ It goes beyond appearance. The image files, the lens options (especially the M-m
 
 ### A statement of intention  
 Carrying a Leica M says something: I care about the craft. I value thoughtful composition, meaningful light, the imperfection of analog heritage. It aligns with how I live: not rushed, not overbuilt, but intentional.
-
----
 
 ## How I Use the Leica M in Practice  
 ### My gear setup  
@@ -47,8 +43,6 @@ When I travel—whether cities in Italy, landscapes in Idaho, or culturally rich
 ### Personal projects  
 For personal work—portraits of friends, experiments in light, the occasional abstract piece—I lean heavily on the Leica M’s strengths: character, clarity, mood. The camera invites me to slow down, reflect, hear the shutter, and engage consciously with subject and space.
 
----
-
 ## Why It Matters: The Philosophy Behind the Gear  
 ### Less is more  
 In our world of hyper-gear, thousands of pixels, 50 lens options, it’s easy to get lost in equipment. The Leica M reminds me of simplicity’s power. It echoes my preference for under-40mm watches, for understated elegance, for design rooted in timelessness—not trend. It’s about quality over quantity. Few tools, deeply used.
@@ -59,8 +53,6 @@ Though digital, the Leica M carries the analog soul: mechanical shutter feel, ma
 ### Story-telling through craft  
 A photograph isn’t just “a digital file.” It’s a story, memory, emotion. Using the Leica M isn’t just about image quality—it’s about telling stories with intention, framing moments as a poet might capture lines of verse. It’s about light, shadow, form, silence, and narrative.
 
----
-
 ## Tips for You, If You’re Considering Leica M  
 - **Rent or borrow first**: The rangefinder experience is different—spend a day with one before committing.  
 - **Focus on one lens**: 35 mm or 50 mm is a great start. Get to know it well.  
@@ -69,14 +61,10 @@ A photograph isn’t just “a digital file.” It’s a story, memory, emotion.
 - **Print your work**: Leica images deserve more than screen—they reward physical print or fine-art paper.  
 - **Connect with community**: Leica users often share stories, hunts, craftsmanship. It adds richness.
 
----
-
 ## My Favourite Leica M Moments  
 - The dawn walk in Venice’s Dorsoduro district, Leica M in hand, capturing soft mist over canals, minimal colour palette, echoes of my tech-lead life dissolving into travel mood.  
 - A spontaneous portrait in Nampa, Idaho: street-light glow, Leica M speed, honest face, shallow depth of field—it reminded me why I pick up a camera in everyday life.  
 - Midnight landscape in the Idaho backcountry: long exposure, Leica M stability, crisp stars above my analog poet soul.
-
----
 
 ## Closing Thoughts  
 The Leica M isn’t just a camera for me—it’s a companion in a way of living. It aligns with my values: craft, minimalism, travel, analog elegance, intentional art. As I continue to build my photography portfolio, my writing, my personal brand as the “Analog Poet,” the Leica M remains central. It reminds me to slow down, to feel light, to see poetry in everyday scenes.
@@ -87,14 +75,5 @@ Think of the Leica M not as a gadget—but as an invitation.
 
 Happy shooting.
 
-— Alex Demitri  
+Alex Demitri  
 Photography · Travel · Analog Poet
-
----
-
-### Meta / SEO Data  
-**Keywords**: Leica M, Leica M camera, rangefinder photography, minimalist photography gear, travel photography setup, Leica M lens, analog-style photography  
-**SEO Title**: My Love for the Leica M Camera and How I Use It  
-**Meta Description**: Discover why I choose the Leica M rangefinder camera for its craftsmanship, minimalist design and travel-friendly workflow. Insights, tips, and stories from my photography journey.
-
-
