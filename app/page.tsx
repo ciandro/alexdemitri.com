@@ -1,21 +1,9 @@
+import Navigation from '@/components/Navigation';
+
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col bg-white">
-      {/* Navigation - Transparent with blur */}
-      <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-nav z-50 border-b border-gray-100">
-        <div className="px-gutter-mobile md:px-gutter-desktop">
-          <div className="flex justify-between items-center h-20">
-            <a href="/" className="text-xl font-light tracking-wide hover:opacity-70 transition">
-              ALEX DEMITRI
-            </a>
-            <div className="flex gap-8 text-sm uppercase tracking-wider">
-              <a href="/gallery" className="hover:opacity-70 transition">Gallery</a>
-              <a href="/about" className="hover:opacity-70 transition">About</a>
-              <a href="/contact" className="hover:opacity-70 transition">Contact</a>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <Navigation currentPage="home" />
 
       {/* Main Content - Photos First */}
       <main className="flex-1 pt-20">
