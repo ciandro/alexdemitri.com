@@ -23,8 +23,8 @@ const config: Config = {
         'gutter-desktop': '8vw',
       },
       fontFamily: {
-        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Helvetica Neue', 'Arial', 'sans-serif'],
-        serif: ['Playfair Display', 'Georgia', 'serif'],
+        sans: ['Merriweather', 'Georgia', 'serif'],
+        serif: ['Merriweather', 'Georgia', 'serif'],
       },
       boxShadow: {
         'sm': 'var(--shadow-sm)',
