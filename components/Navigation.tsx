@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 interface NavigationProps {
-  currentPage?: 'home' | 'gallery' | 'about' | 'contact';
+  currentPage?: 'home' | 'gallery' | 'blog' | 'about' | 'contact';
 }
 
 export default function Navigation({ currentPage }: NavigationProps) {
@@ -26,6 +26,12 @@ export default function Navigation({ currentPage }: NavigationProps) {
               className={currentPage === 'gallery' ? 'opacity-100 font-normal' : 'hover:opacity-70 transition'}
             >
               Gallery
+            </Link>
+            <Link
+              href="/blog"
+              className={currentPage === 'blog' ? 'opacity-100 font-normal' : 'hover:opacity-70 transition'}
+            >
+              Blog
             </Link>
             <Link
               href="/about"
