@@ -1,6 +1,20 @@
 import Navigation from '@/components/Navigation';
+import Image from 'next/image';
 
 export default function Home() {
+  const portfolioImages = [
+    { src: '/images/portfolio/01.jpg', featured: true },
+    { src: '/images/portfolio/02.jpg' },
+    { src: '/images/portfolio/03.jpg' },
+    { src: '/images/portfolio/04.jpg' },
+    { src: '/images/portfolio/05.jpg' },
+    { src: '/images/portfolio/06.jpg', wide: true },
+    { src: '/images/portfolio/07.jpg' },
+    { src: '/images/portfolio/08.jpg' },
+    { src: '/images/portfolio/09.jpg' },
+    { src: '/images/portfolio/10.jpg' },
+  ];
+
   return (
     <div className="min-h-screen flex flex-col bg-white">
       <Navigation currentPage="home" />
@@ -10,40 +24,31 @@ export default function Home() {
         {/* Featured Work Grid - Masonry style */}
         <section className="py-12 md:py-16 px-gutter-mobile md:px-gutter-desktop">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
-            {/* Large featured image */}
-            <div className="col-span-2 row-span-2 aspect-square bg-gray-200 hover:opacity-90 transition cursor-pointer">
-              <div className="w-full h-full flex items-center justify-center text-gray-400 text-sm">
-                Featured Image 1
-              </div>
-            </div>
-
-            {/* Regular grid items */}
-            {[2, 3, 4, 5].map((i) => (
+            {portfolioImages.map((image, index) => (
               <div
-                key={i}
-                className="aspect-square bg-gray-200 hover:opacity-90 transition cursor-pointer"
+                key={index}
+                className={`relative overflow-hidden hover:opacity-90 transition cursor-pointer ${
+                  image.featured
+                    ? 'col-span-2 row-span-2 aspect-square'
+                    : image.wide
+                    ? 'col-span-2 aspect-[2/1]'
+                    : 'aspect-square'
+                }`}
               >
-                <div className="w-full h-full flex items-center justify-center text-gray-400 text-sm">
-                  Image {i}
-                </div>
-              </div>
-            ))}
-
-            {/* Another large item */}
-            <div className="col-span-2 aspect-[2/1] bg-gray-200 hover:opacity-90 transition cursor-pointer">
-              <div className="w-full h-full flex items-center justify-center text-gray-400 text-sm">
-                Wide Image 6
-              </div>
-            </div>
-
-            {[7, 8, 9, 10].map((i) => (
-              <div
-                key={i}
-                className="aspect-square bg-gray-200 hover:opacity-90 transition cursor-pointer"
-              >
-                <div className="w-full h-full flex items-center justify-center text-gray-400 text-sm">
-                  Image {i}
-                </div>
+                <Image
+                  src={image.src}
+                  alt={`Portfolio image ${index + 1}`}
+                  fill
+                  sizes={
+                    image.featured
+                      ? '(max-width: 768px) 100vw, (max-width: 1024px) 66vw, 50vw'
+                      : image.wide
+                      ? '(max-width: 768px) 100vw, (max-width: 1024px) 66vw, 50vw'
+                      : '(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw'
+                  }
+                  className="object-cover"
+                  priority={index === 0}
+                />
               </div>
             ))}
           </div>
