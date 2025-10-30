@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function About() {
   return (
@@ -24,8 +25,14 @@ export default function About() {
         <h1 className="text-5xl md:text-6xl font-light tracking-tight mb-16">About</h1>
 
         <div className="grid md:grid-cols-2 gap-16 items-start mb-24">
-          <div className="aspect-[4/5] bg-gray-200 flex items-center justify-center">
-            <span className="text-gray-400 text-sm">Your Photo</span>
+          <div className="aspect-[4/5] relative overflow-hidden">
+            <Image
+              src="/images/about.jpg"
+              alt="Alex Demitri"
+              fill
+              className="object-cover"
+              priority
+            />
           </div>
           <div className="space-y-6 text-base leading-relaxed text-medium-gray">
             <p>
