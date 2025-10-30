@@ -77,7 +77,7 @@ export default async function BlogPost({ params }: BlogPostPageProps) {
                 prose-h1:text-3xl prose-h1:mb-4
                 prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4
                 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3
-                prose-p:text-base prose-p:text-foreground prose-p:leading-7 prose-p:mb-4
+                prose-p:text-lg prose-p:text-foreground prose-p:leading-7 prose-p:mb-4
                 prose-a:text-accent prose-a:underline hover:prose-a:text-accent-light
                 prose-strong:font-bold prose-strong:text-foreground
                 prose-em:italic prose-em:text-foreground
@@ -87,7 +87,7 @@ export default async function BlogPost({ params }: BlogPostPageProps) {
                 prose-blockquote:border-l-4 prose-blockquote:border-gray-300 prose-blockquote:pl-4 prose-blockquote:italic prose-blockquote:my-6
                 prose-ul:my-6 prose-ul:list-disc prose-ul:pl-6
                 prose-ol:my-6 prose-ol:list-decimal prose-ol:pl-6
-                prose-li:text-base prose-li:text-foreground prose-li:leading-7 prose-li:mb-2"
+                prose-li:text-lg prose-li:text-foreground prose-li:leading-7 prose-li:mb-2"
               dangerouslySetInnerHTML={{ __html: htmlContent }}
             />
           </div>
