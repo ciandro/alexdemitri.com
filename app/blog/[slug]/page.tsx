@@ -32,7 +32,7 @@ export default async function BlogPost({ params }: BlogPostPageProps) {
     <div className="min-h-screen bg-background">
       <Navigation />
 
-      <main className="pt-40 pb-24 px-gutter-mobile md:px-gutter-desktop max-w-5xl mx-auto">
+      <main className="pt-40 pb-24 px-gutter-mobile md:px-gutter-desktop max-w-6xl mx-auto">
         {/* Back link */}
         <Link
           href="/blog"
