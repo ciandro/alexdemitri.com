@@ -81,7 +81,7 @@ export default async function BlogPost({ params }: BlogPostPageProps) {
                 prose-a:text-accent prose-a:underline hover:prose-a:text-accent-light
                 prose-strong:font-bold prose-strong:text-foreground
                 prose-em:italic prose-em:text-foreground
-                prose-img:rounded-lg prose-img:my-8
+                prose-img:rounded-lg prose-img:my-8 prose-img:w-1/2 prose-img:mx-auto
                 prose-code:bg-light-gray prose-code:text-foreground prose-code:px-1 prose-code:py-0.5 prose-code:rounded prose-code:text-sm
                 prose-pre:bg-light-gray prose-pre:border prose-pre:border-border prose-pre:rounded-lg prose-pre:p-4 prose-pre:my-6
                 prose-blockquote:border-l-4 prose-blockquote:border-gray-300 prose-blockquote:pl-4 prose-blockquote:italic prose-blockquote:my-6
