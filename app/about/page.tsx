@@ -16,11 +16,11 @@ export default function About() {
         </div>
 
         {/* Main Content Grid */}
-        <div className="grid lg:grid-cols-5 gap-12 lg:gap-16 items-start mb-20">
+        <div className="grid lg:grid-cols-6 gap-12 lg:gap-16 items-start mb-20">
           {/* Image Column */}
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-1">
             <div className="sticky top-32">
-              <div className="aspect-[3/4] relative overflow-hidden rounded-lg">
+              <div className="aspect-[3/4] relative overflow-hidden rounded-lg max-w-xs mx-auto lg:mx-0">
                 <Image
                   src="/images/about.jpg"
                   alt="Alex Demitri"
@@ -33,7 +33,7 @@ export default function About() {
           </div>
 
           {/* Text Column */}
-          <div className="lg:col-span-3 space-y-6">
+          <div className="lg:col-span-5 space-y-6">
             <p className="text-lg leading-relaxed text-foreground">
               Hello! I'm Alex Demitri, a passionate photographer dedicated to capturing
               the beauty and emotion of life's precious moments.
