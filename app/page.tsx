@@ -3,16 +3,16 @@ import Image from 'next/image';
 
 export default function Home() {
   const portfolioImages = [
-    { src: '/images/portfolio/01.jpg', featured: true },
-    { src: '/images/portfolio/02.jpg' },
-    { src: '/images/portfolio/03.jpg' },
-    { src: '/images/portfolio/04.jpg' },
-    { src: '/images/portfolio/05.jpg' },
-    { src: '/images/portfolio/06.jpg', wide: true },
-    { src: '/images/portfolio/07.jpg' },
-    { src: '/images/portfolio/08.jpg' },
-    { src: '/images/portfolio/09.jpg' },
-    { src: '/images/portfolio/10.jpg' },
+    '/images/portfolio/01.jpg',
+    '/images/portfolio/02.jpg',
+    '/images/portfolio/03.jpg',
+    '/images/portfolio/04.jpg',
+    '/images/portfolio/05.jpg',
+    '/images/portfolio/06.jpg',
+    '/images/portfolio/07.jpg',
+    '/images/portfolio/08.jpg',
+    '/images/portfolio/09.jpg',
+    '/images/portfolio/10.jpg',
   ];
 
   return (
@@ -21,32 +21,20 @@ export default function Home() {
 
       {/* Main Content - Photos First */}
       <main className="flex-1 pt-20">
-        {/* Featured Work Grid - Masonry style */}
+        {/* Masonry Grid - Respects Original Ratios */}
         <section className="py-12 md:py-16 px-gutter-mobile md:px-gutter-desktop">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
-            {portfolioImages.map((image, index) => (
+          <div className="columns-1 md:columns-2 lg:columns-3 gap-4 space-y-4">
+            {portfolioImages.map((src, index) => (
               <div
                 key={index}
-                className={`relative overflow-hidden hover:opacity-90 transition cursor-pointer ${
-                  image.featured
-                    ? 'col-span-2 row-span-2 aspect-square'
-                    : image.wide
-                    ? 'col-span-2 aspect-[2/1]'
-                    : 'aspect-square'
-                }`}
+                className="break-inside-avoid mb-4 hover:opacity-90 transition cursor-pointer"
               >
                 <Image
-                  src={image.src}
+                  src={src}
                   alt={`Portfolio image ${index + 1}`}
-                  fill
-                  sizes={
-                    image.featured
-                      ? '(max-width: 768px) 100vw, (max-width: 1024px) 66vw, 50vw'
-                      : image.wide
-                      ? '(max-width: 768px) 100vw, (max-width: 1024px) 66vw, 50vw'
-                      : '(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw'
-                  }
-                  className="object-cover"
+                  width={1200}
+                  height={1600}
+                  className="w-full h-auto"
                   priority={index === 0}
                 />
               </div>

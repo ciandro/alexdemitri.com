@@ -32,55 +32,14 @@ export default function Gallery() {
           </div>
         </div>
 
-        {/* Photo Grid - Masonry style */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
-          {/* Mix of different sized images for visual interest */}
-          <div className="col-span-2 aspect-[3/2] bg-gray-200 hover:opacity-90 transition cursor-pointer">
-            <div className="w-full h-full flex items-center justify-center text-gray-400 text-sm">
-              Photo 1
-            </div>
-          </div>
-
-          {[2, 3, 4, 5, 6, 7].map((i) => (
+        {/* Photo Grid - Masonry style - Respects Original Ratios */}
+        <div className="columns-1 md:columns-2 lg:columns-3 gap-4 space-y-4">
+          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20].map((i) => (
             <div
               key={i}
-              className="aspect-square bg-gray-200 hover:opacity-90 transition cursor-pointer"
+              className="break-inside-avoid mb-4 hover:opacity-90 transition cursor-pointer"
             >
-              <div className="w-full h-full flex items-center justify-center text-gray-400 text-sm">
-                Photo {i}
-              </div>
-            </div>
-          ))}
-
-          <div className="aspect-[2/3] bg-gray-200 hover:opacity-90 transition cursor-pointer">
-            <div className="w-full h-full flex items-center justify-center text-gray-400 text-sm">
-              Photo 8
-            </div>
-          </div>
-
-          {[9, 10, 11, 12].map((i) => (
-            <div
-              key={i}
-              className="aspect-square bg-gray-200 hover:opacity-90 transition cursor-pointer"
-            >
-              <div className="w-full h-full flex items-center justify-center text-gray-400 text-sm">
-                Photo {i}
-              </div>
-            </div>
-          ))}
-
-          <div className="col-span-2 aspect-[2/1] bg-gray-200 hover:opacity-90 transition cursor-pointer">
-            <div className="w-full h-full flex items-center justify-center text-gray-400 text-sm">
-              Photo 13
-            </div>
-          </div>
-
-          {[14, 15, 16, 17, 18, 19, 20].map((i) => (
-            <div
-              key={i}
-              className="aspect-square bg-gray-200 hover:opacity-90 transition cursor-pointer"
-            >
-              <div className="w-full h-full flex items-center justify-center text-gray-400 text-sm">
+              <div className="w-full bg-gray-200 flex items-center justify-center text-gray-400 text-sm" style={{ aspectRatio: '3/4', minHeight: '300px' }}>
                 Photo {i}
               </div>
             </div>
