@@ -50,6 +50,9 @@ export const galleryImages: GalleryImage[] = [
   { id: 'p1', src: '/images/gallery/portraits/1.jpg', alt: 'Portrait 1', category: 'portraits' },
   { id: 'p2', src: '/images/gallery/portraits/2.jpg', alt: 'Portrait 2', category: 'portraits' },
   { id: 'p3', src: '/images/gallery/portraits/3.jpg', alt: 'Portrait 3', category: 'portraits' },
+  { id: 'p4', src: '/images/gallery/portraits/4.jpg', alt: 'Portrait 4', category: 'portraits' },
+  { id: 'p5', src: '/images/gallery/portraits/5.jpg', alt: 'Portrait 5', category: 'portraits' },
+  { id: 'p6', src: '/images/gallery/portraits/6.jpg', alt: 'Portrait 6', category: 'portraits' },
 
   // Landscapes
   { id: 'l1', src: '/images/gallery/landscapes/1.jpg', alt: 'Landscape 1', category: 'landscapes' },
