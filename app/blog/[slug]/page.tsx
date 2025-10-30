@@ -29,7 +29,7 @@ export default async function BlogPost({ params }: BlogPostPageProps) {
   const htmlContent = marked(post.content);
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-white">
       <Navigation />
 
       <main className="pt-40 pb-24 px-gutter-mobile md:px-gutter-desktop max-w-7xl mx-auto">
@@ -43,12 +43,12 @@ export default async function BlogPost({ params }: BlogPostPageProps) {
         </Link>
 
         {/* Post header */}
-        <article className="bg-white rounded-3xl shadow-lg overflow-hidden mb-12">
-          <header className="p-8 md:p-12 lg:p-16 border-b border-border">
+        <article className="mb-12">
+          <header className="mb-12">
             <div className="flex items-center gap-3 mb-8">
               <time
                 dateTime={post.date}
-                className="inline-flex items-center gap-2 text-sm font-medium text-accent bg-accent/10 px-4 py-2 rounded-full"
+                className="text-sm font-medium text-medium-gray"
               >
                 {new Date(post.date).toLocaleDateString('en-US', {
                   month: 'long',
@@ -70,7 +70,7 @@ export default async function BlogPost({ params }: BlogPostPageProps) {
           </header>
 
           {/* Post content */}
-          <div className="p-8 md:p-12 lg:p-16">
+          <div>
             <div
               className="prose prose-lg max-w-none
                 prose-headings:font-sans prose-headings:font-bold prose-headings:text-foreground
@@ -94,7 +94,7 @@ export default async function BlogPost({ params }: BlogPostPageProps) {
         </article>
 
         {/* Comments section */}
-        <div className="bg-white rounded-3xl shadow-lg p-8 md:p-12">
+        <div className="mt-16 pt-12 border-t border-gray-200">
           <Comments />
         </div>
       </main>
