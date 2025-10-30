@@ -1,6 +1,12 @@
+'use client';
+
+import { useState } from 'react';
 import Navigation from '@/components/Navigation';
+import Lightbox from '@/components/Lightbox';
 
 export default function Gallery() {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
   // Placeholder for your actual images
   const categories = [
     { name: 'Portraits', count: 12 },
@@ -38,6 +44,7 @@ export default function Gallery() {
             <div
               key={i}
               className="break-inside-avoid mb-4 hover:opacity-90 transition cursor-pointer"
+              onClick={() => setSelectedImage(`/placeholder/photo-${i}.jpg`)}
             >
               <div className="w-full bg-gray-200 flex items-center justify-center text-gray-400 text-sm" style={{ aspectRatio: '3/4', minHeight: '300px' }}>
                 Photo {i}
@@ -46,6 +53,15 @@ export default function Gallery() {
           ))}
         </div>
       </main>
+
+      {/* Lightbox */}
+      {selectedImage && (
+        <Lightbox
+          imageSrc={selectedImage}
+          imageAlt="Gallery image"
+          onClose={() => setSelectedImage(null)}
+        />
+      )}
     </div>
   );
 }

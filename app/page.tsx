@@ -1,7 +1,13 @@
+'use client';
+
+import { useState } from 'react';
 import Navigation from '@/components/Navigation';
 import Image from 'next/image';
+import Lightbox from '@/components/Lightbox';
 
 export default function Home() {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
   const portfolioImages = [
     '/images/portfolio/01.jpg',
     '/images/portfolio/02.jpg',
@@ -28,6 +34,7 @@ export default function Home() {
               <div
                 key={index}
                 className="break-inside-avoid mb-4 hover:opacity-90 transition cursor-pointer"
+                onClick={() => setSelectedImage(src)}
               >
                 <Image
                   src={src}
@@ -42,6 +49,15 @@ export default function Home() {
           </div>
         </section>
       </main>
+
+      {/* Lightbox */}
+      {selectedImage && (
+        <Lightbox
+          imageSrc={selectedImage}
+          imageAlt="Portfolio image"
+          onClose={() => setSelectedImage(null)}
+        />
+      )}
 
       {/* Footer - Minimal */}
       <footer className="bg-light-gray py-12 border-t border-gray-200">
