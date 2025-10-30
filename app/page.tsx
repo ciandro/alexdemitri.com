@@ -17,21 +17,10 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* Hero Section - Minimal with large imagery */}
+      {/* Main Content - Photos First */}
       <main className="flex-1 pt-20">
-        <section className="relative h-[85vh] flex items-center justify-center bg-light-gray">
-          <div className="text-center px-gutter-mobile md:px-gutter-desktop max-w-4xl">
-            <h1 className="text-6xl md:text-8xl font-light tracking-tight mb-6 text-foreground">
-              Alex Demitri
-            </h1>
-            <p className="text-lg md:text-xl font-light text-medium-gray mb-12 tracking-wide">
-              Photography
-            </p>
-          </div>
-        </section>
-
         {/* Featured Work Grid - Masonry style */}
-        <section className="py-16 md:py-24 px-gutter-mobile md:px-gutter-desktop">
+        <section className="py-12 md:py-16 px-gutter-mobile md:px-gutter-desktop">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
             {/* Large featured image */}
             <div className="col-span-2 row-span-2 aspect-square bg-gray-200 hover:opacity-90 transition cursor-pointer">
