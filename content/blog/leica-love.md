@@ -12,7 +12,6 @@ Photography for me has always been more than just capturing moments—it's a way
 
 ## Why the Leica M?
 
-### A tool that respects time  
 From the moment I first picked up a Leica M, I sensed a difference. It’s not just a camera, there's a certain tactile experience that comes with it. Somehow, you can look at it as a lineage of craftsmanship, clarity and quiet precision. Unlike many high-speed, mega-buttoned systems, the Leica M invites slowness. Like, "you have got to figure out exposure for real" slowness lol. The manual focus, snap-shutter feel, and rangefinder framing all engage your senses differently.
 
 That slowness matters. In an era of instant everything, I want to pause, reflect, choose the moment. The M system demands that: you pay for it immediately as soon as you get home and check your files and/or receive your scans, if you do film as well. In doing so, there's a certain aspect of transforming a camera from a mere tool, to a closer expression of your ideas. There's just an undeniable "it" factor, at least for me... and it shows in my photos. Maybe it's seeing the rangefinder.
