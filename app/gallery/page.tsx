@@ -40,6 +40,11 @@ export default function Gallery() {
                   delay: index * 0.15,
                   ease: [0.25, 0.46, 0.45, 0.94]
                 }}
+                style={{
+                  transform: 'translate3d(0, 0, 0)',
+                  backfaceVisibility: 'hidden',
+                  WebkitBackfaceVisibility: 'hidden'
+                }}
                 className="border border-gray-200 rounded-lg overflow-hidden hover:border-accent transition-colors"
               >
                 {/* Cover Image */}
