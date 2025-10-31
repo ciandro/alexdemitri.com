@@ -1,5 +1,5 @@
 ---
-title: "My Leica M: Why I Choose It for My Photography"
+title: "Leica Love: a choice"
 date: "2025-10-29"
 excerpt: "Photography for me has always been more than just capturing moments—it's a way of seeing, of feeling time, of translating silence into light. Here's why I choose the Leica M range of cameras."
 ---
@@ -13,9 +13,9 @@ Photography for me has always been more than just capturing moments—it's a way
 ## Why the Leica M?
 
 ### A tool that respects time  
-From the moment I first picked up a Leica M, I sensed a difference. It’s not just a camera—it carries a lineage of craftsmanship, clarity and quiet precision. Unlike many high-speed, mega-buttoned systems, the Leica M invites slowness. The manual focus, snap-shutter feel, and rangefinder framing all engage your senses differently.
+From the moment I first picked up a Leica M, I sensed a difference. It’s not just a camera, there's a certain tactile experience that comes with it. Somehow, you can look at it as a lineage of craftsmanship, clarity and quiet precision. Unlike many high-speed, mega-buttoned systems, the Leica M invites slowness. Like, "you have got to figure out exposure for real" slowness lol. The manual focus, snap-shutter feel, and rangefinder framing all engage your senses differently.
 
-That slowness matters. In an era of instant everything, I want to pause, reflect, choose the moment. The Leica M demands that. In doing so, it becomes a partner in the process—rather than just a tool.
+That slowness matters. In an era of instant everything, I want to pause, reflect, choose the moment. The M system demands that: you pay for it immediately as soon as you get home and check your files and/or receive your scans, if you do film as well. In doing so, there's a certain aspect of transforming a camera from a mere tool, to a closer expression of your ideas. There's just an undeniable "it" factor, at least for me... and it shows in my photos. Maybe it's seeing the rangefinder.
 
 ### Build, design and minimalism  
 The Leica M is beautifully designed: flawless finishing, mechanical precision, and minimal clutter. For someone who loves subtle elegance (and as you know my “Analog Poet” identity), it resonates deeply. The camera isn’t screaming for attention; it quietly stands ready. That minimalism carries over into my style: understated, thoughtful, rooted in analog aesthetics, travel memory, quiet elegance.
@@ -33,7 +33,7 @@ Carrying a Leica M says something: I care about the craft. I value thoughtful co
 ### My gear setup
 
 - **Body**: I typically shoot with the Leica M10 (or newer) because it balances digital capability with that analog feel.
-- **Lens choice**: A 35 mm summarises much of what I do—street, travel, environmental portrait. I also carry a 50 mm for tighter portraits, and occasionally a 90 mm for more intimate work.
+- **Lens choice**: A 35 mm summarises much of what I do—street, travel, environmental portrait. I also carry a 50 mm for tighter portraits. That's really it.
 - **Settings**: I favour aperture-priority or manual mode, ISO kept modest (Leica sensors handle this well). I often shoot in raw + monochrome preview to visualise mood.
 - **Accessories**: Leather strap, minimal bag (I prefer something compact for travel), a couple of ND filters or UV if needed, but I deliberately avoid carrying too much gear.
 
