@@ -37,3 +37,69 @@ body {
     -webkit-backdrop-filter: blur(10px);
   }
 }
+
+/* Blog content - Newspaper-style image layouts */
+.blog-content img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Image size variations for blog posts */
+.blog-content .img-small {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blog-content .img-medium {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blog-content .img-large {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Indent image left - newspaper style */
+.blog-content .img-indent-left {
+  float: left;
+  margin-right: 2rem;
+  margin-bottom: 1.5rem;
+  margin-top: 0.5rem;
+  max-width: 45%;
+}
+
+/* Indent image right - newspaper style */
+.blog-content .img-indent-right {
+  float: right;
+  margin-left: 2rem;
+  margin-bottom: 1.5rem;
+  margin-top: 0.5rem;
+  max-width: 45%;
+}
+
+/* Figure with caption support */
+.blog-content figure {
+  margin: 2.5rem 0;
+}
+
+.blog-content figure img {
+  margin-bottom: 0.75rem;
+}
+
+.blog-content figcaption {
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--medium-gray);
+  font-style: italic;
+  margin-top: 0.75rem;
+}
+
+/* Clear floats */
+.blog-content .clear {
+  clear: both;
+}

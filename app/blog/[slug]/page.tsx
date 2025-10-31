@@ -32,7 +32,7 @@ export default async function BlogPost({ params }: BlogPostPageProps) {
     <div className="min-h-screen bg-white">
       <Navigation />
 
-      <main className="pt-40 pb-24 px-gutter-mobile md:px-gutter-desktop max-w-7xl mx-auto">
+      <main className="pt-40 pb-24 px-gutter-mobile md:px-gutter-desktop max-w-4xl mx-auto">
         {/* Back link */}
         <Link
           href="/blog"
@@ -69,25 +69,28 @@ export default async function BlogPost({ params }: BlogPostPageProps) {
             )}
           </header>
 
-          {/* Post content */}
-          <div>
+          {/* Post content - Newspaper style */}
+          <div className="blog-content">
             <div
               className="prose prose-lg max-w-none
                 prose-headings:font-sans prose-headings:font-bold prose-headings:text-foreground
-                prose-h1:text-3xl prose-h1:mb-4
-                prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4
-                prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3
-                prose-p:text-lg prose-p:text-foreground prose-p:leading-7 prose-p:mb-4
+                prose-h1:text-3xl prose-h1:mb-4 prose-h1:mt-12
+                prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-6
+                prose-h3:text-xl prose-h3:mt-10 prose-h3:mb-4
+                prose-p:text-base prose-p:text-foreground prose-p:leading-relaxed prose-p:mb-6
                 prose-a:text-accent prose-a:underline hover:prose-a:text-accent-light
-                prose-strong:font-bold prose-strong:text-foreground
+                prose-strong:font-semibold prose-strong:text-foreground
                 prose-em:italic prose-em:text-foreground
-                prose-img:rounded-lg prose-img:my-8 prose-img:w-3/5 prose-img:mx-auto
-                prose-code:bg-light-gray prose-code:text-foreground prose-code:px-1 prose-code:py-0.5 prose-code:rounded prose-code:text-sm
+                prose-img:rounded-none prose-img:my-10 prose-img:w-full prose-img:mx-auto
+                prose-code:bg-light-gray prose-code:text-foreground prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-sm
                 prose-pre:bg-light-gray prose-pre:border prose-pre:border-border prose-pre:rounded-lg prose-pre:p-4 prose-pre:my-6
-                prose-blockquote:border-l-4 prose-blockquote:border-gray-300 prose-blockquote:pl-4 prose-blockquote:italic prose-blockquote:my-6
+                prose-blockquote:border-l-4 prose-blockquote:border-gray-300 prose-blockquote:pl-6 prose-blockquote:italic prose-blockquote:my-8 prose-blockquote:text-medium-gray
                 prose-ul:my-6 prose-ul:list-disc prose-ul:pl-6
                 prose-ol:my-6 prose-ol:list-decimal prose-ol:pl-6
-                prose-li:text-lg prose-li:text-foreground prose-li:leading-7 prose-li:mb-2"
+                prose-li:text-base prose-li:text-foreground prose-li:leading-relaxed prose-li:mb-2
+                prose-hr:border-gray-300 prose-hr:my-12
+                prose-figure:my-10
+                prose-figcaption:text-center prose-figcaption:text-sm prose-figcaption:text-medium-gray prose-figcaption:mt-3 prose-figcaption:italic"
               dangerouslySetInnerHTML={{ __html: htmlContent }}
             />
           </div>
