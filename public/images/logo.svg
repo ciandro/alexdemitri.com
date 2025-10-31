@@ -1,5 +1,4 @@
 <svg width="400" height="100" viewBox="0 0 400 100" xmlns="http://www.w3.org/2000/svg">
-  <rect width="400" height="100" fill="white"/>
   <text x="90" y="60" font-family="'Helvetica Neue', 'Inter', sans-serif" font-size="40" font-weight="500" fill="black">ALEX DEMITRI</text>
   <circle cx="40" cy="50" r="25" stroke="black" stroke-width="2" fill="none"/>
   <rect x="35" y="25" width="10" height="50" rx="2" fill="black"/>
