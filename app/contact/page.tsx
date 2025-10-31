@@ -74,21 +74,20 @@ export default function Contact() {
               <div>
                 <div className="text-xs uppercase tracking-wider mb-2 text-foreground">Phone</div>
                 <a href="tel:+1234567890" className="hover:text-foreground transition">
-                  +1 (234) 567-890
+                  +1 (208) 576-6767
                 </a>
               </div>
               <div>
                 <div className="text-xs uppercase tracking-wider mb-2 text-foreground">Location</div>
-                <p>Based in Your City, Country</p>
+                <p>Based in Boise, Idaho</p>
               </div>
             </div>
 
             <div>
               <div className="text-xs uppercase tracking-wider mb-4 text-foreground">Follow</div>
               <div className="space-y-2">
-                <div><a href="#" className="hover:text-foreground transition">Instagram</a></div>
-                <div><a href="#" className="hover:text-foreground transition">Twitter</a></div>
-                <div><a href="#" className="hover:text-foreground transition">LinkedIn</a></div>
+                <div><a href="https://www.instagram.com/thephotosandro/" className="hover:text-foreground transition">Instagram</a></div>
+                <div><a href="https://www.linkedin.com/in/alessandrodemitri/" className="hover:text-foreground transition">LinkedIn</a></div>
               </div>
             </div>
           </div>
