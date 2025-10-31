@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import { motion } from 'framer-motion';
 import Navigation from '@/components/Navigation';
 import Image from 'next/image';
 import Lightbox from '@/components/Lightbox';
@@ -32,21 +31,8 @@ export default function Home() {
         <section className="py-12 md:py-16 px-gutter-mobile md:px-gutter-desktop">
           <div className="columns-1 md:columns-2 lg:columns-3 gap-4 space-y-4">
             {portfolioImages.map((src, index) => (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.2, margin: "0px 0px -150px 0px" }}
-                transition={{
-                  duration: 0.8,
-                  delay: index * 0.03,
-                  ease: [0.25, 0.46, 0.45, 0.94]
-                }}
-                style={{
-                  transform: 'translate3d(0, 0, 0)',
-                  backfaceVisibility: 'hidden',
-                  WebkitBackfaceVisibility: 'hidden'
-                }}
                 className="break-inside-avoid mb-4 hover:opacity-90 transition cursor-pointer"
                 onClick={() => setSelectedImageIndex(index)}
               >
@@ -58,7 +44,7 @@ export default function Home() {
                   className="w-full h-auto"
                   priority={index === 0}
                 />
-              </motion.div>
+              </div>
             ))}
           </div>
         </section>

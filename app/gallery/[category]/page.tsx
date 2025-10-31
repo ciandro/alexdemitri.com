@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import { motion } from 'framer-motion';
 import { notFound, useParams } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -58,21 +57,8 @@ export default function CategoryGallery() {
         ) : (
           <div className="columns-1 md:columns-2 lg:columns-3 gap-6">
             {images.map((image, index) => (
-              <motion.div
+              <div
                 key={image.id}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.2, margin: "0px 0px -150px 0px" }}
-                transition={{
-                  duration: 0.8,
-                  delay: index * 0.03,
-                  ease: [0.25, 0.46, 0.45, 0.94]
-                }}
-                style={{
-                  transform: 'translate3d(0, 0, 0)',
-                  backfaceVisibility: 'hidden',
-                  WebkitBackfaceVisibility: 'hidden'
-                }}
                 className="break-inside-avoid mb-6 group cursor-pointer"
                 onClick={() => setSelectedImageIndex(index)}
               >
@@ -85,7 +71,7 @@ export default function CategoryGallery() {
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
         )}

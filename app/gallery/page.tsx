@@ -1,6 +1,3 @@
-'use client';
-
-import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
 import Navigation from '@/components/Navigation';
@@ -31,22 +28,7 @@ export default function Gallery() {
               href={`/gallery/${category.slug}`}
               className="group block"
             >
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.3, margin: "0px 0px -100px 0px" }}
-                transition={{
-                  duration: 0.8,
-                  delay: index * 0.15,
-                  ease: [0.25, 0.46, 0.45, 0.94]
-                }}
-                style={{
-                  transform: 'translate3d(0, 0, 0)',
-                  backfaceVisibility: 'hidden',
-                  WebkitBackfaceVisibility: 'hidden'
-                }}
-                className="border border-gray-200 rounded-lg overflow-hidden hover:border-accent transition-colors"
-              >
+              <div className="border border-gray-200 rounded-lg overflow-hidden hover:border-accent transition-colors">
                 {/* Cover Image */}
                 <div className="relative aspect-[4/3] bg-gray-200">
                   <Image
@@ -67,7 +49,7 @@ export default function Gallery() {
                     {category.description}
                   </p>
                 </div>
-              </motion.div>
+              </div>
             </Link>
           ))}
         </div>
