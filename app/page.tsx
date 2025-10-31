@@ -66,7 +66,7 @@ export default function Home() {
       <footer className="bg-light-gray py-12 border-t border-gray-200">
         <div className="px-gutter-mobile md:px-gutter-desktop text-center">
           <p className="text-sm text-medium-gray tracking-wide">
-            &copy; {new Date().getFullYear()} Alex Demitri Photography
+            &copy; {new Date().getFullYear()} Alex Demitri Photography | Built with love by Alex and Claude
           </p>
         </div>
       </footer>
