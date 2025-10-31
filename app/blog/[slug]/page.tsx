@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { marked } from 'marked';
 import Navigation from '@/components/Navigation';
-import Comments from '@/components/Comments';
+import Subscribe from '@/components/Subscribe';
 import { getBlogPost, getBlogPosts } from '@/lib/blog';
 
 interface BlogPostPageProps {
@@ -96,9 +96,9 @@ export default async function BlogPost({ params }: BlogPostPageProps) {
           </div>
         </article>
 
-        {/* Comments section */}
+        {/* Subscribe section */}
         <div className="mt-16 pt-12 border-t border-gray-200">
-          <Comments />
+          <Subscribe />
         </div>
       </main>
     </div>
