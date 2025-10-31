@@ -12,10 +12,11 @@ import { getCategoryBySlug, getImagesByCategory } from '@/lib/gallery';
 export default function CategoryGallery() {
   const params = useParams();
   const categorySlug = params.category as string;
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
 
   const category = getCategoryBySlug(categorySlug);
   const images = getImagesByCategory(categorySlug);
+  const imageSources = images.map(img => img.src);
 
   if (!category) {
     notFound();
@@ -68,7 +69,7 @@ export default function CategoryGallery() {
                   ease: "easeOut"
                 }}
                 className="break-inside-avoid mb-6 group cursor-pointer"
-                onClick={() => setSelectedImage(image.src)}
+                onClick={() => setSelectedImageIndex(index)}
               >
                 <div className="relative aspect-[4/5] rounded-lg overflow-hidden hover:opacity-90 transition">
                   <Image
@@ -86,11 +87,14 @@ export default function CategoryGallery() {
       </main>
 
       {/* Lightbox */}
-      {selectedImage && (
+      {selectedImageIndex !== null && (
         <Lightbox
-          imageSrc={selectedImage}
+          imageSrc={imageSources[selectedImageIndex]}
           imageAlt="Gallery image"
-          onClose={() => setSelectedImage(null)}
+          onClose={() => setSelectedImageIndex(null)}
+          images={imageSources}
+          currentIndex={selectedImageIndex}
+          onNavigate={setSelectedImageIndex}
         />
       )}
     </div>

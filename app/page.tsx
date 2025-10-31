@@ -7,7 +7,7 @@ import Image from 'next/image';
 import Lightbox from '@/components/Lightbox';
 
 export default function Home() {
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
 
   const portfolioImages = [
     '/images/portfolio/01.jpg',
@@ -43,7 +43,7 @@ export default function Home() {
                   ease: "easeOut"
                 }}
                 className="break-inside-avoid mb-4 hover:opacity-90 transition cursor-pointer"
-                onClick={() => setSelectedImage(src)}
+                onClick={() => setSelectedImageIndex(index)}
               >
                 <Image
                   src={src}
@@ -60,11 +60,14 @@ export default function Home() {
       </main>
 
       {/* Lightbox */}
-      {selectedImage && (
+      {selectedImageIndex !== null && (
         <Lightbox
-          imageSrc={selectedImage}
+          imageSrc={portfolioImages[selectedImageIndex]}
           imageAlt="Portfolio image"
-          onClose={() => setSelectedImage(null)}
+          onClose={() => setSelectedImageIndex(null)}
+          images={portfolioImages}
+          currentIndex={selectedImageIndex}
+          onNavigate={setSelectedImageIndex}
         />
       )}
 
