@@ -2,6 +2,7 @@
 title: "Leica Love: a choice"
 date: "2025-10-29"
 excerpt: "Photography for me has always been more than just capturing moments—it's a way of seeing, of feeling time, of translating silence into light. Here's why I choose the Leica M range of cameras."
+coverImage: "/images/blog/leica-love.jpg"
 ---
 
 *By Alex Demitri*
