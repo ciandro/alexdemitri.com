@@ -2,6 +2,7 @@
 title: "The Art of Street Photography"
 date: "2025-10-30"
 excerpt: "Exploring the spontaneous moments and authentic stories found on city streets through my lens."
+coverImage: "/images/blog/street-example.jpg"
 ---
 
 *By Alex Demitri*
