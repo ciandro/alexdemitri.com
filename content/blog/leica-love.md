@@ -9,6 +9,11 @@ coverImage: "/images/blog/leica-love.jpg"
 
 Photography for me has always been more than just capturing moments—it's a way of seeing, of feeling time, of translating silence into light. Over the years, I've gravitated toward a singular tool that truly reflects that ethos: the **Leica M range of cameras**. In this post I'll share why the Leica M is my choice, how I use it in my work and life, and what it has taught me about photography, travel, and the art of observation.
 
+<figure>
+    <img src="/images/blog/leica-love.jpg" alt="Leica M6" />
+    <figcaption>My Leica M6 for when I want to shoot film</figcaption>
+</figure>
+
 ---
 
 ## Why the Leica M?
