@@ -1,3 +1,6 @@
+'use client';
+
+import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
 import Navigation from '@/components/Navigation';
@@ -22,13 +25,23 @@ export default function Gallery() {
 
         {/* Category Tiles */}
         <div className="grid md:grid-cols-2 gap-8">
-          {galleryCategories.map((category) => (
+          {galleryCategories.map((category, index) => (
             <Link
               key={category.id}
               href={`/gallery/${category.slug}`}
               className="group block"
             >
-              <div className="border border-gray-200 rounded-lg overflow-hidden hover:border-accent transition-colors">
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{
+                  duration: 0.6,
+                  delay: index * 0.1,
+                  ease: "easeOut"
+                }}
+                className="border border-gray-200 rounded-lg overflow-hidden hover:border-accent transition-colors"
+              >
                 {/* Cover Image */}
                 <div className="relative aspect-[4/3] bg-gray-200">
                   <Image
@@ -49,7 +62,7 @@ export default function Gallery() {
                     {category.description}
                   </p>
                 </div>
-              </div>
+              </motion.div>
             </Link>
           ))}
         </div>
